@@ -28,7 +28,7 @@ import Simplify
 ## Initialialize the SDK
 In order to use the SDK, you must initialize the `Simplify` object with your public api key.
 
-```
+```swift
 let simplify = Simplify(apiKey: <#your public api key#>)
 ```
 > Your public api key can be found and managed under "Account Settings" > "API Keys" on the Simplify website.
