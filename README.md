@@ -18,14 +18,14 @@ github "simpliftcom/simplify-ios-sdk"
 
 ## Usage
 
-##! Import the SDK
+## Import the SDK
 Import the Simplify SDK into your project
 
 ```swift
 import Simplify
 ```
 
-#!# Initialialize the SDK
+## Initialialize the SDK
 In order to use the SDK, you must initialize the `Simplify` object with your public api key.
 
 ```
@@ -33,7 +33,7 @@ let simplify = Simplify(apiKey: <#your public api key#>)
 ```
 > Your public api key can be found and managed under "Account Settings" > "API Keys" on the Simplify website.
 
-#!# Create a Card Token
+## Create a Card Token
 Once you have inititalized an instance of `Simplify`, you can then construct a `SimplifyMap` containing the card information and pass that to the `createCardToken` function to create a card token.
 
 ```swift
