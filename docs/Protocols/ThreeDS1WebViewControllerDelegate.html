@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ThreeDS1WebViewControllerDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/ThreeDS1WebViewControllerDelegate" class="dashAnchor"></a>
+    <a title="ThreeDS1WebViewControllerDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Simplify Docs</a> (77% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Simplify Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        ThreeDS1WebViewControllerDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CardEntryView.html">CardEntryView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Simplify.html">Simplify</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ThreeDS1WebViewController.html">ThreeDS1WebViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Result.html">Result</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SimplifyMap.html">SimplifyMap</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SimplifyMap/DecodingError.html">– DecodingError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ThreeDS1WebViewControllerDelegate.html">ThreeDS1WebViewControllerDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/SimplifyError.html">SimplifyError</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ThreeDS1WebViewControllerDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ThreeDS1WebViewControllerDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>A protocol for observing the status of the 3DS 1.0 transaction being authenticated with a <code><a href="../Classes/ThreeDS1WebViewController.html">ThreeDS1WebViewController</a></code></p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Simplify33ThreeDS1WebViewControllerDelegateP05threecdeF0_23didReceiveACSAuthResultyAA0bcdeF0C_SStF"></a>
+                    <a name="//apple_ref/swift/Method/threeDS1WebViewController(_:didReceiveACSAuthResult:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Simplify33ThreeDS1WebViewControllerDelegateP05threecdeF0_23didReceiveACSAuthResultyAA0bcdeF0C_SStF">threeDS1WebViewController(_:didReceiveACSAuthResult:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when 3DS 1.0 authentication for the transaction is completed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">threeDS1WebViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">webView</span><span class="p">:</span> <span class="kt"><a href="../Classes/ThreeDS1WebViewController.html">ThreeDS1WebViewController</a></span><span class="p">,</span> <span class="n">didReceiveACSAuthResult</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>webView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Classes/ThreeDS1WebViewController.html">ThreeDS1WebViewController</a></code> that called the delegate.  This useful for dismissing the view.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>result</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The ACSAuthResult from the transaction.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Simplify33ThreeDS1WebViewControllerDelegateP05threecdeF9DidCancelyyAA0bcdeF0CF"></a>
+                    <a name="//apple_ref/swift/Method/threeDS1WebViewControllerDidCancel(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Simplify33ThreeDS1WebViewControllerDelegateP05threecdeF9DidCancelyyAA0bcdeF0CF">threeDS1WebViewControllerDidCancel(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the authentication is cancelled</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">threeDS1WebViewControllerDidCancel</span><span class="p">(</span><span class="n">_</span> <span class="nv">webView</span><span class="p">:</span> <span class="kt"><a href="../Classes/ThreeDS1WebViewController.html">ThreeDS1WebViewController</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>webView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Classes/ThreeDS1WebViewController.html">ThreeDS1WebViewController</a></code> that called the delegate.  This useful for dismissing the view.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-05-03)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

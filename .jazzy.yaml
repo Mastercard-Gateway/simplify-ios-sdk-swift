@@ -1,0 +1,9 @@
+xcodebuild_arguments:
+    - "-workspace"
+    - "Simplify-SDK-Swift.xcworkspace"
+    - "-scheme"
+    - "Simplify-SDK-Swift"
+    - "-configuration"
+    - "Release"
+module: Simplify
+exclude: /**/Internal*

@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F11D01D2283556400942864 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F11D01C2283556400942864 /* Logger.swift */; };
+		6F6798C4226E3F4800E9D6C1 /* Simplify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F6798BA226E3F4800E9D6C1 /* Simplify.framework */; };
+		6F6798CB226E3F4800E9D6C1 /* Simplify_SDK_Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F6798BD226E3F4800E9D6C1 /* Simplify_SDK_Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F6798D7226F4D1500E9D6C1 /* SimplifyMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6798D6226F4D1500E9D6C1 /* SimplifyMap.swift */; };
+		6F6798D9226F71E300E9D6C1 /* SimplifyMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6798D8226F71E300E9D6C1 /* SimplifyMapTests.swift */; };
+		6F6798DB2270BC0E00E9D6C1 /* Simplify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6798DA2270BC0E00E9D6C1 /* Simplify.swift */; };
+		6F6798DD2270C10000E9D6C1 /* SimplifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6798DC2270C10000E9D6C1 /* SimplifyTests.swift */; };
+		6F6798DF2271E9BB00E9D6C1 /* BuildConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6798DE2271E9BB00E9D6C1 /* BuildConfig.swift */; };
+		6F6798E12271F07E00E9D6C1 /* URLSessionPinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6798E02271F07E00E9D6C1 /* URLSessionPinner.swift */; };
+		6F6798E52271FB3600E9D6C1 /* URLSessionPinnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6798E42271FB3600E9D6C1 /* URLSessionPinnerTests.swift */; };
+		6F6798E722720D6900E9D6C1 /* FoundationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6798E622720D6900E9D6C1 /* FoundationProtocols.swift */; };
+		6F6798E9227229C800E9D6C1 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6798E8227229C800E9D6C1 /* Result.swift */; };
+		6F6798EB22722B7E00E9D6C1 /* SimplifyResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6798EA22722B7E00E9D6C1 /* SimplifyResponseHandler.swift */; };
+		6F6798EF22733D8B00E9D6C1 /* SimplifyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6798EE22733D8B00E9D6C1 /* SimplifyError.swift */; };
+		6F6798F1227347F700E9D6C1 /* SimplifyResponseHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6798F0227347F700E9D6C1 /* SimplifyResponseHandlerTests.swift */; };
+		6F6798F322738F1700E9D6C1 /* CommonMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6798F222738F1700E9D6C1 /* CommonMocks.swift */; };
+		6F6798F52273970000E9D6C1 /* XCTestCaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6798F42273970000E9D6C1 /* XCTestCaseExtensions.swift */; };
+		6F6798FB2277362A00E9D6C1 /* ThreeDS1WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6798FA2277362A00E9D6C1 /* ThreeDS1WebViewController.swift */; };
+		6F6798FF2277690B00E9D6C1 /* ThreeDS1WebViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6798FE2277690B00E9D6C1 /* ThreeDS1WebViewControllerTests.swift */; };
+		6F679901227769AA00E9D6C1 /* WebKitProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F679900227769AA00E9D6C1 /* WebKitProtocols.swift */; };
+		6F73003022787BB8005800C7 /* CardEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F73002F22787BB8005800C7 /* CardEntryView.swift */; };
+		6F73003422787C73005800C7 /* ExpiryPickerField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F73003322787C73005800C7 /* ExpiryPickerField.swift */; };
+		6F73003822788A12005800C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F73003722788A12005800C7 /* Assets.xcassets */; };
+		6F73003A22789286005800C7 /* CardEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F73003922789286005800C7 /* CardEntryViewModel.swift */; };
+		6FFB41CB2278AABF00694925 /* UIView+SuperViewHugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFB41CA2278AABF00694925 /* UIView+SuperViewHugging.swift */; };
+		6FFB41CD2278C1C600694925 /* CardEntryViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFB41CC2278C1C600694925 /* CardEntryViewModelTests.swift */; };
+		6FFB41D32279F5B300694925 /* Bundle+SDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFB41D22279F5B300694925 /* Bundle+SDK.swift */; };
+		6FFB41DD227B2DA200694925 /* CardEntryViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFB41DC227B2DA200694925 /* CardEntryViewTests.swift */; };
+		6FFB41DF227B360D00694925 /* DecoratedTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFB41DE227B360D00694925 /* DecoratedTextFieldTests.swift */; };
+		6FFB41E1227B37BA00694925 /* TestAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FFB41E0227B37BA00694925 /* TestAssets.xcassets */; };
+		6FFB41E3227B3FE600694925 /* CardBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFB41E2227B3FE600694925 /* CardBrand.swift */; };
+		6FFB41E5227B40AE00694925 /* CardBrand.Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFB41E4227B40AE00694925 /* CardBrand.Details.swift */; };
+		6FFB41E7227B45BD00694925 /* LuhnValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFB41E6227B45BD00694925 /* LuhnValidator.swift */; };
+		6FFB41E9227B77A300694925 /* DecoratedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFB41E8227B77A300694925 /* DecoratedTextField.swift */; };
+		6FFB41EB227BCE8B00694925 /* CardBrandDetailsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFB41EA227BCE8B00694925 /* CardBrandDetailsTests.swift */; };
+		6FFB41ED227C84A200694925 /* LuhnValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFB41EC227C84A200694925 /* LuhnValidatorTests.swift */; };
+		6FFB41F4227CA1C200694925 /* Simplify_Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFB41F3227CA1C200694925 /* Simplify_Internal.swift */; };
+		6FFB41F7227CAADB00694925 /* SimplifyMap_Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFB41F6227CAADB00694925 /* SimplifyMap_Internal.swift */; };
+		6FFB41F9227CAB0E00694925 /* CardEntryView_Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFB41F8227CAB0E00694925 /* CardEntryView_Internal.swift */; };
+		6FFB41FB227CAB8700694925 /* ThreeDS1WebViewController_internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFB41FA227CAB8700694925 /* ThreeDS1WebViewController_internal.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F6798C5226E3F4800E9D6C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F6798B1226E3F4800E9D6C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F6798B9226E3F4800E9D6C1;
+			remoteInfo = "Simplify-SDK-Swift";
+		};
+		6F730028227875BF005800C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F730024227875BE005800C7 /* SimplifySDKSampleApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6F73000F227875BC005800C7;
+			remoteInfo = SimplifySDKSampleApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F11D01C2283556400942864 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		6F6798BA226E3F4800E9D6C1 /* Simplify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Simplify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F6798BD226E3F4800E9D6C1 /* Simplify_SDK_Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Simplify_SDK_Swift.h; sourceTree = "<group>"; };
+		6F6798BE226E3F4800E9D6C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F6798C3226E3F4800E9D6C1 /* Simplify-SDK-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simplify-SDK-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F6798CA226E3F4800E9D6C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F6798D6226F4D1500E9D6C1 /* SimplifyMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplifyMap.swift; sourceTree = "<group>"; };
+		6F6798D8226F71E300E9D6C1 /* SimplifyMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplifyMapTests.swift; sourceTree = "<group>"; };
+		6F6798DA2270BC0E00E9D6C1 /* Simplify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simplify.swift; sourceTree = "<group>"; };
+		6F6798DC2270C10000E9D6C1 /* SimplifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplifyTests.swift; sourceTree = "<group>"; };
+		6F6798DE2271E9BB00E9D6C1 /* BuildConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildConfig.swift; sourceTree = "<group>"; };
+		6F6798E02271F07E00E9D6C1 /* URLSessionPinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionPinner.swift; sourceTree = "<group>"; };
+		6F6798E42271FB3600E9D6C1 /* URLSessionPinnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionPinnerTests.swift; sourceTree = "<group>"; };
+		6F6798E622720D6900E9D6C1 /* FoundationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationProtocols.swift; sourceTree = "<group>"; };
+		6F6798E8227229C800E9D6C1 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		6F6798EA22722B7E00E9D6C1 /* SimplifyResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplifyResponseHandler.swift; sourceTree = "<group>"; };
+		6F6798EE22733D8B00E9D6C1 /* SimplifyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplifyError.swift; sourceTree = "<group>"; };
+		6F6798F0227347F700E9D6C1 /* SimplifyResponseHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplifyResponseHandlerTests.swift; sourceTree = "<group>"; };
+		6F6798F222738F1700E9D6C1 /* CommonMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMocks.swift; sourceTree = "<group>"; };
+		6F6798F42273970000E9D6C1 /* XCTestCaseExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCaseExtensions.swift; sourceTree = "<group>"; };
+		6F6798FA2277362A00E9D6C1 /* ThreeDS1WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDS1WebViewController.swift; sourceTree = "<group>"; };
+		6F6798FE2277690B00E9D6C1 /* ThreeDS1WebViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDS1WebViewControllerTests.swift; sourceTree = "<group>"; };
+		6F679900227769AA00E9D6C1 /* WebKitProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebKitProtocols.swift; sourceTree = "<group>"; };
+		6F730024227875BE005800C7 /* SimplifySDKSampleApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SimplifySDKSampleApp.xcodeproj; path = SimplifySDKSampleApp/SimplifySDKSampleApp.xcodeproj; sourceTree = "<group>"; };
+		6F73002F22787BB8005800C7 /* CardEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEntryView.swift; sourceTree = "<group>"; };
+		6F73003322787C73005800C7 /* ExpiryPickerField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiryPickerField.swift; sourceTree = "<group>"; };
+		6F73003722788A12005800C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F73003922789286005800C7 /* CardEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEntryViewModel.swift; sourceTree = "<group>"; };
+		6FFB41CA2278AABF00694925 /* UIView+SuperViewHugging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+SuperViewHugging.swift"; sourceTree = "<group>"; };
+		6FFB41CC2278C1C600694925 /* CardEntryViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEntryViewModelTests.swift; sourceTree = "<group>"; };
+		6FFB41D22279F5B300694925 /* Bundle+SDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+SDK.swift"; sourceTree = "<group>"; };
+		6FFB41DC227B2DA200694925 /* CardEntryViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEntryViewTests.swift; sourceTree = "<group>"; };
+		6FFB41DE227B360D00694925 /* DecoratedTextFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratedTextFieldTests.swift; sourceTree = "<group>"; };
+		6FFB41E0227B37BA00694925 /* TestAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TestAssets.xcassets; sourceTree = "<group>"; };
+		6FFB41E2227B3FE600694925 /* CardBrand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBrand.swift; sourceTree = "<group>"; };
+		6FFB41E4227B40AE00694925 /* CardBrand.Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBrand.Details.swift; sourceTree = "<group>"; };
+		6FFB41E6227B45BD00694925 /* LuhnValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuhnValidator.swift; sourceTree = "<group>"; };
+		6FFB41E8227B77A300694925 /* DecoratedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratedTextField.swift; sourceTree = "<group>"; };
+		6FFB41EA227BCE8B00694925 /* CardBrandDetailsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBrandDetailsTests.swift; sourceTree = "<group>"; };
+		6FFB41EC227C84A200694925 /* LuhnValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuhnValidatorTests.swift; sourceTree = "<group>"; };
+		6FFB41F3227CA1C200694925 /* Simplify_Internal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simplify_Internal.swift; sourceTree = "<group>"; };
+		6FFB41F6227CAADB00694925 /* SimplifyMap_Internal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplifyMap_Internal.swift; sourceTree = "<group>"; };
+		6FFB41F8227CAB0E00694925 /* CardEntryView_Internal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEntryView_Internal.swift; sourceTree = "<group>"; };
+		6FFB41FA227CAB8700694925 /* ThreeDS1WebViewController_internal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDS1WebViewController_internal.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F6798B7226E3F4800E9D6C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F6798C0226E3F4800E9D6C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F6798C4226E3F4800E9D6C1 /* Simplify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F6798B0226E3F4800E9D6C1 = {
+			isa = PBXGroup;
+			children = (
+				6F6798BC226E3F4800E9D6C1 /* Simplify-SDK-Swift */,
+				6F6798C7226E3F4800E9D6C1 /* Simplify-SDK-SwiftTests */,
+				6F6798BB226E3F4800E9D6C1 /* Products */,
+				6F730024227875BE005800C7 /* SimplifySDKSampleApp.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		6F6798BB226E3F4800E9D6C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F6798BA226E3F4800E9D6C1 /* Simplify.framework */,
+				6F6798C3226E3F4800E9D6C1 /* Simplify-SDK-SwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F6798BC226E3F4800E9D6C1 /* Simplify-SDK-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				6F6798BD226E3F4800E9D6C1 /* Simplify_SDK_Swift.h */,
+				6F6798DA2270BC0E00E9D6C1 /* Simplify.swift */,
+				6F6798D6226F4D1500E9D6C1 /* SimplifyMap.swift */,
+				6F6798E8227229C800E9D6C1 /* Result.swift */,
+				6F6798EE22733D8B00E9D6C1 /* SimplifyError.swift */,
+				6F6798FA2277362A00E9D6C1 /* ThreeDS1WebViewController.swift */,
+				6F73002F22787BB8005800C7 /* CardEntryView.swift */,
+				6F6798F72277354200E9D6C1 /* Internal */,
+				6F6798BE226E3F4800E9D6C1 /* Info.plist */,
+				6F73003722788A12005800C7 /* Assets.xcassets */,
+			);
+			path = "Simplify-SDK-Swift";
+			sourceTree = "<group>";
+		};
+		6F6798C7226E3F4800E9D6C1 /* Simplify-SDK-SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F6798D8226F71E300E9D6C1 /* SimplifyMapTests.swift */,
+				6F6798DC2270C10000E9D6C1 /* SimplifyTests.swift */,
+				6F6798F0227347F700E9D6C1 /* SimplifyResponseHandlerTests.swift */,
+				6F6798E42271FB3600E9D6C1 /* URLSessionPinnerTests.swift */,
+				6F6798FE2277690B00E9D6C1 /* ThreeDS1WebViewControllerTests.swift */,
+				6FFB41F0227C8B1500694925 /* Test Utilities */,
+				6FFB41EF227C8AFA00694925 /* CardEntry */,
+				6FFB41E0227B37BA00694925 /* TestAssets.xcassets */,
+				6F6798CA226E3F4800E9D6C1 /* Info.plist */,
+			);
+			path = "Simplify-SDK-SwiftTests";
+			sourceTree = "<group>";
+		};
+		6F6798F72277354200E9D6C1 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				6FFB41D12279F1A200694925 /* CardEntryView */,
+				6F6798EA22722B7E00E9D6C1 /* SimplifyResponseHandler.swift */,
+				6FFB41FC227CAC7700694925 /* Core */,
+				6FFB41FD227CAC8C00694925 /* System Extensions */,
+				6FFB41FA227CAB8700694925 /* ThreeDS1WebViewController_internal.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		6F730025227875BE005800C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F730029227875BF005800C7 /* SimplifySDKSampleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FFB41D12279F1A200694925 /* CardEntryView */ = {
+			isa = PBXGroup;
+			children = (
+				6FFB41F8227CAB0E00694925 /* CardEntryView_Internal.swift */,
+				6F73003922789286005800C7 /* CardEntryViewModel.swift */,
+				6FFB41EE227C84BF00694925 /* Views */,
+				6FFB41E2227B3FE600694925 /* CardBrand.swift */,
+				6FFB41E4227B40AE00694925 /* CardBrand.Details.swift */,
+				6FFB41E6227B45BD00694925 /* LuhnValidator.swift */,
+			);
+			path = CardEntryView;
+			sourceTree = "<group>";
+		};
+		6FFB41EE227C84BF00694925 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6F73003322787C73005800C7 /* ExpiryPickerField.swift */,
+				6FFB41E8227B77A300694925 /* DecoratedTextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6FFB41EF227C8AFA00694925 /* CardEntry */ = {
+			isa = PBXGroup;
+			children = (
+				6FFB41DC227B2DA200694925 /* CardEntryViewTests.swift */,
+				6FFB41CC2278C1C600694925 /* CardEntryViewModelTests.swift */,
+				6FFB41DE227B360D00694925 /* DecoratedTextFieldTests.swift */,
+				6FFB41EA227BCE8B00694925 /* CardBrandDetailsTests.swift */,
+				6FFB41EC227C84A200694925 /* LuhnValidatorTests.swift */,
+			);
+			path = CardEntry;
+			sourceTree = "<group>";
+		};
+		6FFB41F0227C8B1500694925 /* Test Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6F6798F222738F1700E9D6C1 /* CommonMocks.swift */,
+				6F6798F42273970000E9D6C1 /* XCTestCaseExtensions.swift */,
+			);
+			path = "Test Utilities";
+			sourceTree = "<group>";
+		};
+		6FFB41FC227CAC7700694925 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6F6798E02271F07E00E9D6C1 /* URLSessionPinner.swift */,
+				6F6798DE2271E9BB00E9D6C1 /* BuildConfig.swift */,
+				6FFB41F3227CA1C200694925 /* Simplify_Internal.swift */,
+				6FFB41F6227CAADB00694925 /* SimplifyMap_Internal.swift */,
+				6F11D01C2283556400942864 /* Logger.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6FFB41FD227CAC8C00694925 /* System Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6F6798E622720D6900E9D6C1 /* FoundationProtocols.swift */,
+				6F679900227769AA00E9D6C1 /* WebKitProtocols.swift */,
+				6FFB41CA2278AABF00694925 /* UIView+SuperViewHugging.swift */,
+				6FFB41D22279F5B300694925 /* Bundle+SDK.swift */,
+			);
+			path = "System Extensions";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6F6798B5226E3F4800E9D6C1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F6798CB226E3F4800E9D6C1 /* Simplify_SDK_Swift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6F6798B9226E3F4800E9D6C1 /* Simplify-SDK-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F6798CE226E3F4800E9D6C1 /* Build configuration list for PBXNativeTarget "Simplify-SDK-Swift" */;
+			buildPhases = (
+				6F6798B5226E3F4800E9D6C1 /* Headers */,
+				6F6798B6226E3F4800E9D6C1 /* Sources */,
+				6F6798B7226E3F4800E9D6C1 /* Frameworks */,
+				6F6798B8226E3F4800E9D6C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Simplify-SDK-Swift";
+			productName = "Simplify-SDK-Swift";
+			productReference = 6F6798BA226E3F4800E9D6C1 /* Simplify.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6F6798C2226E3F4800E9D6C1 /* Simplify-SDK-SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F6798D1226E3F4800E9D6C1 /* Build configuration list for PBXNativeTarget "Simplify-SDK-SwiftTests" */;
+			buildPhases = (
+				6F6798BF226E3F4800E9D6C1 /* Sources */,
+				6F6798C0226E3F4800E9D6C1 /* Frameworks */,
+				6F6798C1226E3F4800E9D6C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F6798C6226E3F4800E9D6C1 /* PBXTargetDependency */,
+			);
+			name = "Simplify-SDK-SwiftTests";
+			productName = "Simplify-SDK-SwiftTests";
+			productReference = 6F6798C3226E3F4800E9D6C1 /* Simplify-SDK-SwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F6798B1226E3F4800E9D6C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Mastercard;
+				TargetAttributes = {
+					6F6798B9226E3F4800E9D6C1 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					6F6798C2226E3F4800E9D6C1 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 6F6798B4226E3F4800E9D6C1 /* Build configuration list for PBXProject "Simplify-SDK-Swift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6F6798B0226E3F4800E9D6C1;
+			productRefGroup = 6F6798BB226E3F4800E9D6C1 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6F730025227875BE005800C7 /* Products */;
+					ProjectRef = 6F730024227875BE005800C7 /* SimplifySDKSampleApp.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				6F6798B9226E3F4800E9D6C1 /* Simplify-SDK-Swift */,
+				6F6798C2226E3F4800E9D6C1 /* Simplify-SDK-SwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6F730029227875BF005800C7 /* SimplifySDKSampleApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SimplifySDKSampleApp.app;
+			remoteRef = 6F730028227875BF005800C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F6798B8226E3F4800E9D6C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F73003822788A12005800C7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F6798C1226E3F4800E9D6C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FFB41E1227B37BA00694925 /* TestAssets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F6798B6226E3F4800E9D6C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F6798FB2277362A00E9D6C1 /* ThreeDS1WebViewController.swift in Sources */,
+				6FFB41E7227B45BD00694925 /* LuhnValidator.swift in Sources */,
+				6F679901227769AA00E9D6C1 /* WebKitProtocols.swift in Sources */,
+				6FFB41E5227B40AE00694925 /* CardBrand.Details.swift in Sources */,
+				6F73003022787BB8005800C7 /* CardEntryView.swift in Sources */,
+				6FFB41CB2278AABF00694925 /* UIView+SuperViewHugging.swift in Sources */,
+				6F6798DF2271E9BB00E9D6C1 /* BuildConfig.swift in Sources */,
+				6F11D01D2283556400942864 /* Logger.swift in Sources */,
+				6FFB41E9227B77A300694925 /* DecoratedTextField.swift in Sources */,
+				6FFB41F4227CA1C200694925 /* Simplify_Internal.swift in Sources */,
+				6F73003422787C73005800C7 /* ExpiryPickerField.swift in Sources */,
+				6FFB41F9227CAB0E00694925 /* CardEntryView_Internal.swift in Sources */,
+				6F6798E722720D6900E9D6C1 /* FoundationProtocols.swift in Sources */,
+				6F73003A22789286005800C7 /* CardEntryViewModel.swift in Sources */,
+				6F6798EB22722B7E00E9D6C1 /* SimplifyResponseHandler.swift in Sources */,
+				6F6798DB2270BC0E00E9D6C1 /* Simplify.swift in Sources */,
+				6FFB41F7227CAADB00694925 /* SimplifyMap_Internal.swift in Sources */,
+				6F6798E9227229C800E9D6C1 /* Result.swift in Sources */,
+				6F6798EF22733D8B00E9D6C1 /* SimplifyError.swift in Sources */,
+				6F6798D7226F4D1500E9D6C1 /* SimplifyMap.swift in Sources */,
+				6FFB41E3227B3FE600694925 /* CardBrand.swift in Sources */,
+				6FFB41D32279F5B300694925 /* Bundle+SDK.swift in Sources */,
+				6F6798E12271F07E00E9D6C1 /* URLSessionPinner.swift in Sources */,
+				6FFB41FB227CAB8700694925 /* ThreeDS1WebViewController_internal.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F6798BF226E3F4800E9D6C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FFB41DD227B2DA200694925 /* CardEntryViewTests.swift in Sources */,
+				6F6798FF2277690B00E9D6C1 /* ThreeDS1WebViewControllerTests.swift in Sources */,
+				6F6798F52273970000E9D6C1 /* XCTestCaseExtensions.swift in Sources */,
+				6F6798F322738F1700E9D6C1 /* CommonMocks.swift in Sources */,
+				6FFB41DF227B360D00694925 /* DecoratedTextFieldTests.swift in Sources */,
+				6FFB41CD2278C1C600694925 /* CardEntryViewModelTests.swift in Sources */,
+				6F6798E52271FB3600E9D6C1 /* URLSessionPinnerTests.swift in Sources */,
+				6FFB41ED227C84A200694925 /* LuhnValidatorTests.swift in Sources */,
+				6FFB41EB227BCE8B00694925 /* CardBrandDetailsTests.swift in Sources */,
+				6F6798DD2270C10000E9D6C1 /* SimplifyTests.swift in Sources */,
+				6F6798F1227347F700E9D6C1 /* SimplifyResponseHandlerTests.swift in Sources */,
+				6F6798D9226F71E300E9D6C1 /* SimplifyMapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F6798C6226E3F4800E9D6C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F6798B9226E3F4800E9D6C1 /* Simplify-SDK-Swift */;
+			targetProxy = 6F6798C5226E3F4800E9D6C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6F6798CC226E3F4800E9D6C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6F6798CD226E3F4800E9D6C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6F6798CF226E3F4800E9D6C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Simplify-SDK-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mastercard.simplify.Simplify-SDK-Swift";
+				PRODUCT_NAME = Simplify;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F6798D0226E3F4800E9D6C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Simplify-SDK-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mastercard.simplify.Simplify-SDK-Swift";
+				PRODUCT_NAME = Simplify;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6F6798D2226E3F4800E9D6C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Simplify-SDK-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mastercard.simplify.Simplify-SDK-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F6798D3226E3F4800E9D6C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Simplify-SDK-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mastercard.simplify.Simplify-SDK-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F6798B4226E3F4800E9D6C1 /* Build configuration list for PBXProject "Simplify-SDK-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F6798CC226E3F4800E9D6C1 /* Debug */,
+				6F6798CD226E3F4800E9D6C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F6798CE226E3F4800E9D6C1 /* Build configuration list for PBXNativeTarget "Simplify-SDK-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F6798CF226E3F4800E9D6C1 /* Debug */,
+				6F6798D0226E3F4800E9D6C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F6798D1226E3F4800E9D6C1 /* Build configuration list for PBXNativeTarget "Simplify-SDK-SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F6798D2226E3F4800E9D6C1 /* Debug */,
+				6F6798D3226E3F4800E9D6C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F6798B1226E3F4800E9D6C1 /* Project object */;
+}

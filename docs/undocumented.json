@@ -1,0 +1,110 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/CardEntryView.swift",
+      "line": 22,
+      "symbol": "CardEntryView.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/CardEntryView.swift",
+      "line": 27,
+      "symbol": "CardEntryView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/CardEntryView.swift",
+      "line": 32,
+      "symbol": "CardEntryView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/Result.swift",
+      "line": 8,
+      "symbol": "Result.success(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/Result.swift",
+      "line": 9,
+      "symbol": "Result.failure(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/SimplifyMap.swift",
+      "line": 21,
+      "symbol": "SimplifyMap.nil",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/SimplifyMap.swift",
+      "line": 22,
+      "symbol": "SimplifyMap.string(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/SimplifyMap.swift",
+      "line": 23,
+      "symbol": "SimplifyMap.int(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/SimplifyMap.swift",
+      "line": 24,
+      "symbol": "SimplifyMap.double(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/SimplifyMap.swift",
+      "line": 25,
+      "symbol": "SimplifyMap.bool(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/SimplifyMap.swift",
+      "line": 26,
+      "symbol": "SimplifyMap.array(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/SimplifyMap.swift",
+      "line": 27,
+      "symbol": "SimplifyMap.map(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/SimplifyMap.swift",
+      "line": 33,
+      "symbol": "SimplifyMap.DecodingError.invalidData(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/ThreeDS1WebViewController.swift",
+      "line": 34,
+      "symbol": "ThreeDS1WebViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/ThreeDS1WebViewController.swift",
+      "line": 40,
+      "symbol": "ThreeDS1WebViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/e035016/dev/simplify-sdk-swift-ios"
+}
