@@ -57,13 +57,6 @@
 			remoteGlobalIDString = 6F6798B9226E3F4800E9D6C1;
 			remoteInfo = "Simplify-SDK-Swift";
 		};
-		6F730028227875BF005800C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6F730024227875BE005800C7 /* SimplifySDKSampleApp.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6F73000F227875BC005800C7;
-			remoteInfo = SimplifySDKSampleApp;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -90,7 +83,6 @@
 		6F6798FA2277362A00E9D6C1 /* ThreeDS1WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDS1WebViewController.swift; sourceTree = "<group>"; };
 		6F6798FE2277690B00E9D6C1 /* ThreeDS1WebViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDS1WebViewControllerTests.swift; sourceTree = "<group>"; };
 		6F679900227769AA00E9D6C1 /* WebKitProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebKitProtocols.swift; sourceTree = "<group>"; };
-		6F730024227875BE005800C7 /* SimplifySDKSampleApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SimplifySDKSampleApp.xcodeproj; path = SimplifySDKSampleApp/SimplifySDKSampleApp.xcodeproj; sourceTree = "<group>"; };
 		6F73002F22787BB8005800C7 /* CardEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEntryView.swift; sourceTree = "<group>"; };
 		6F73003322787C73005800C7 /* ExpiryPickerField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiryPickerField.swift; sourceTree = "<group>"; };
 		6F73003722788A12005800C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -138,7 +130,6 @@
 				6F6798BC226E3F4800E9D6C1 /* Simplify-SDK-Swift */,
 				6F6798C7226E3F4800E9D6C1 /* Simplify-SDK-SwiftTests */,
 				6F6798BB226E3F4800E9D6C1 /* Products */,
-				6F730024227875BE005800C7 /* SimplifySDKSampleApp.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -194,14 +185,6 @@
 				6FFB41FA227CAB8700694925 /* ThreeDS1WebViewController_internal.swift */,
 			);
 			path = Internal;
-			sourceTree = "<group>";
-		};
-		6F730025227875BE005800C7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6F730029227875BF005800C7 /* SimplifySDKSampleApp.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		6FFB41D12279F1A200694925 /* CardEntryView */ = {
@@ -332,10 +315,11 @@
 				TargetAttributes = {
 					6F6798B9226E3F4800E9D6C1 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 					6F6798C2226E3F4800E9D6C1 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -345,16 +329,11 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 6F6798B0226E3F4800E9D6C1;
 			productRefGroup = 6F6798BB226E3F4800E9D6C1 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 6F730025227875BE005800C7 /* Products */;
-					ProjectRef = 6F730024227875BE005800C7 /* SimplifySDKSampleApp.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				6F6798B9226E3F4800E9D6C1 /* Simplify-SDK-Swift */,
@@ -362,16 +341,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		6F730029227875BF005800C7 /* SimplifySDKSampleApp.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = SimplifySDKSampleApp.app;
-			remoteRef = 6F730028227875BF005800C7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6F6798B8226E3F4800E9D6C1 /* Resources */ = {
@@ -597,7 +566,7 @@
 				PRODUCT_NAME = Simplify;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -622,7 +591,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mastercard.simplify.Simplify-SDK-Swift";
 				PRODUCT_NAME = Simplify;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -640,7 +609,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mastercard.simplify.Simplify-SDK-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -658,7 +627,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mastercard.simplify.Simplify-SDK-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

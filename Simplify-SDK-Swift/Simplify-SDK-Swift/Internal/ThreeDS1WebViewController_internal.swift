@@ -75,7 +75,7 @@ extension ThreeDS1WebViewController {
             return
         }
         
-        let resultData = Data(bytes: result.utf8)
+        let resultData = Data(_: result.utf8)
         let resultMap = try? jsonDecoder.decode(SimplifyMap.self, from: resultData)
         if let result = resultMap?.secure3d.authenticated.boolValue {
             delegate?.threeDS1WebViewController(self, didReceiveACSAuthResult: result, for: currentToken)
