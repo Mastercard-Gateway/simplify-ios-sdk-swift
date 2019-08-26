@@ -13,7 +13,7 @@
     <a title="Simplify  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">Simplify Docs</a> (77% documented)</p>
+        <p><a href="index.html">Simplify Docs</a> (0% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -26,62 +26,70 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
-          <li class="nav-group-name">
-            <a href="Classes.html">Classes</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Classes/CardEntryView.html">CardEntryView</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/Simplify.html">Simplify</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/ThreeDS1WebViewController.html">ThreeDS1WebViewController</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="Enums.html">Enumerations</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Enums/Result.html">Result</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Enums/SimplifyMap.html">SimplifyMap</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Enums/SimplifyMap/DecodingError.html">– DecodingError</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="Protocols.html">Protocols</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Protocols/ThreeDS1WebViewControllerDelegate.html">ThreeDS1WebViewControllerDelegate</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="Structs.html">Structures</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Structs/SimplifyError.html">SimplifyError</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
       <article class="main-content">
         <section>
           <section class="section">
             
-            <h1 id='simplify-sdk-swift-ios' class='heading'>Simplify-SDK-Swift-iOS</h1>
+            <h1 id='simplify-ios-sdk' class='heading'>Simplify iOS SDK</h1>
+
+<p>The iOS SDK by Simplify allows you to create a card token (one time use token representing card details) in your iOS app to send to a server to enable it to make a payment. By creating a card token, Simplify allows you to avoid sending card details to your server. The SDK can help with formatting and validating card information before the information is tokenized.</p>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<ul>
+<li>Swift 4.2 or higher</li>
+</ul>
+<h2 id='installation' class='heading'>Installation</h2>
+
+<p>The iOS SDK can be manualy included in your project by downloading or cloning the SDK project and adding it as a subproject in your project.  </p>
+
+<p>If you would like to use <a href="https://github.com/Carthage/Carthage">Carthage</a> to integrate the sdk into your project, you can do so with the following line in your cartfile.</p>
+<pre class="highlight plaintext"><code>github "simpliftcom/simplify-ios-sdk"
+</code></pre>
+<h2 id='usage' class='heading'>Usage</h2>
+<h2 id='import-the-sdk' class='heading'>! Import the SDK</h2>
+
+<p>Import the Simplify SDK into your project</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">Simplify</span>
+</code></pre>
+<h1 id='initialialize-the-sdk' class='heading'>!# Initialialize the SDK</h1>
+
+<p>In order to use the SDK, you must initialize the <code>Simplify</code> object with your public api key.</p>
+<pre class="highlight plaintext"><code>let simplify = Simplify(apiKey: &lt;#your public api key#&gt;)
+</code></pre>
+
+<blockquote>
+<p>Your public api key can be found and managed under <q>Account Settings</q> &gt; <q>API Keys</q> on the Simplify website.</p>
+</blockquote>
+<h1 id='create-a-card-token' class='heading'>!# Create a Card Token</h1>
+
+<p>Once you have inititalized an instance of <code>Simplify</code>, you can then construct a <code>SimplifyMap</code> containing the card information and pass that to the <code>createCardToken</code> function to create a card token.</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">card</span> <span class="o">=</span> <span class="kt">SimplifyMap</span><span class="p">()</span>
+<span class="n">card</span><span class="o">.</span><span class="n">number</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="s">"&lt;#card number#&gt;"</span>
+<span class="n">card</span><span class="o">.</span><span class="n">cvc</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="s">"&lt;#security code#&gt;"</span>
+<span class="n">card</span><span class="o">.</span><span class="n">expMonth</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="s">"&lt;#expiration month#&gt;"</span>
+<span class="n">card</span><span class="o">.</span><span class="n">expYear</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="s">"&lt;#expiration year#&gt;"</span>
+
+<span class="n">simplify</span><span class="o">.</span><span class="nf">createCardToken</span><span class="p">(</span><span class="nv">card</span><span class="p">:</span> <span class="n">card</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="k">in</span>
+    <span class="k">switch</span> <span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">cardToken</span><span class="p">):</span>
+        <span class="c1">// do provide the CardToken to your server to process the payment</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+        <span class="c1">// handle the error</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<hr>
+<h2 id='sample-app' class='heading'>Sample App</h2>
+
+<p>This project includes a sample app to demonstrate SDK usage. To configure the sample app, add your public key to the <code>PaymentViewController</code> in the project.</p>
 
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-05-03)</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-08-26)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
