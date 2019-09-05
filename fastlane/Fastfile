@@ -31,13 +31,13 @@ platform :ios do
 
   desc "Update the SDK version number for all frameworks in the project."
   lane :update_version do
-    current_build_number = get_build_number(xcodeproj: "Simplify-SDK-Swift/Simplfiy-SDK-Swift.xcodeproj")
+    current_build_number = get_build_number(xcodeproj: "Simplify-SDK-Swift/Simplify-SDK-Swift.xcodeproj/")
     UI.message("Current SDK version: #{current_build_number}")
     version = UI.input("Enter the new SDK version Number:")
 
     increment_build_number(
       build_number: version,
-      xcodeproj: "Simplify-SDK-Swift/Simplfiy-SDK-Swift.xcodeproj"
+      xcodeproj: "Simplify-SDK-Swift/Simplify-SDK-Swift.xcodeproj/"
     )
   end
 
