@@ -2,100 +2,23 @@
   "warnings": [
     {
       "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/CardEntryView.swift",
-      "line": null,
-      "symbol": "CardEntryView",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/CardEntryView.swift",
-      "line": 3,
-      "symbol": "CardEntryView",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/CardEntryView.swift",
-      "line": 5,
-      "symbol": "CardEntryView.card",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/CardEntryView.swift",
-      "line": 6,
-      "symbol": "CardEntryView.isValid",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/CardEntryView.swift",
-      "line": 8,
-      "symbol": "CardEntryView.underlineColor",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/CardEntryView.swift",
-      "line": 9,
-      "symbol": "CardEntryView.iconColor",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/CardEntryView.swift",
-      "line": 10,
-      "symbol": "CardEntryView.errorColor",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/CardEntryView.swift",
-      "line": 11,
-      "symbol": "CardEntryView.textColor",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/CardEntryView.swift",
-      "line": 13,
+      "line": 22,
       "symbol": "CardEntryView.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/CardEntryView.swift",
-      "line": 18,
+      "line": 27,
       "symbol": "CardEntryView.init(frame:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/CardEntryView.swift",
-      "line": 23,
+      "line": 32,
       "symbol": "CardEntryView.init(coder:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/CardEntryView.swift",
-      "line": 47,
-      "symbol": "CardEntryView.cardNumberPlaceholderText",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/CardEntryView.swift",
-      "line": 52,
-      "symbol": "CardEntryView.cardExpiryPlaceholderText",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/CardEntryView.swift",
-      "line": 57,
-      "symbol": "CardEntryView.cardCvcPlaceholderText",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -170,57 +93,15 @@
     },
     {
       "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/ThreeDS1WebViewController.swift",
-      "line": 3,
-      "symbol": "ThreeDS1WebViewControllerDelegate",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/ThreeDS1WebViewController.swift",
-      "line": 4,
-      "symbol": "ThreeDS1WebViewControllerDelegate.threeDS1WebViewController(_:didReceiveACSAuthResult:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/ThreeDS1WebViewController.swift",
-      "line": 5,
-      "symbol": "ThreeDS1WebViewControllerDelegate.threeDS1WebViewControllerDidCancel(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/ThreeDS1WebViewController.swift",
-      "line": 8,
-      "symbol": "ThreeDS1WebViewController",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/ThreeDS1WebViewController.swift",
-      "line": 10,
-      "symbol": "ThreeDS1WebViewController.delegate",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/ThreeDS1WebViewController.swift",
-      "line": 19,
+      "line": 34,
       "symbol": "ThreeDS1WebViewController.viewDidLoad()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/ThreeDS1WebViewController.swift",
-      "line": 25,
+      "line": 40,
       "symbol": "ThreeDS1WebViewController.viewWillAppear(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/e035016/dev/simplify-sdk-swift-ios/Simplify-SDK-Swift/Simplify-SDK-Swift/ThreeDS1WebViewController.swift",
-      "line": 31,
-      "symbol": "ThreeDS1WebViewController.authenticate(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }
