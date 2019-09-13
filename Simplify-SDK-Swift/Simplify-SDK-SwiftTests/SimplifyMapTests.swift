@@ -28,7 +28,7 @@ class SimplifyMapTests: XCTestCase {
     override func setUp() {
         testSubject = SimplifyMap()
         allSimpleValues =  ["string" : "A", "int" : 1, "double" : 1.25, "true": true, "false" : false, "nil" : SimplifyMap.nil]
-        complexValues =  ["map" : allSimpleValues, "array" : [allSimpleValues, allSimpleValues]]
+        complexValues =  ["map" : allSimpleValues!, "array" : [allSimpleValues, allSimpleValues]]
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
