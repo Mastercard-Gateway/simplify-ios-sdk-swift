@@ -1,0 +1,9 @@
+language: swift
+
+xcode_workspace: Simplify-SDK-Swift.xcworkspace
+xcode_scheme: Simplify-SDK-Swift
+osx_image: xcode10.3
+xcode_sdk: iphonesimulator12.4
+
+script:
+- xcodebuild clean build test -workspace Simplify-SDK-Swift.xcworkspace -scheme Simplify-SDK-Swift -destination "platform=iOS Simulator,name=iPhone X"

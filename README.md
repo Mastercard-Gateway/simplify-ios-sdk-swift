@@ -3,7 +3,7 @@
 The iOS SDK by Simplify allows you to create a card token (one time use token representing card details) in your iOS app to send to a server to enable it to make a payment. By creating a card token, Simplify allows you to avoid sending card details to your server. The SDK can help with formatting and validating card information before the information is tokenized.
 
 ## Requirements
-  - Swift 4.2 or higher
+  - Swift 5 or higher
 
 ## Installation
 
