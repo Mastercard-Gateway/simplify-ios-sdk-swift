@@ -1,5 +1,8 @@
 # Simplify iOS SDK
 
+> **Warning**
+> Merchants are required to upgrade their mobile SDKs to facilitate the transition to EMV 3DS. Further information and access to the SDKs have been made available in the lead up to the decommissioning date. The new SDKs can be access by contacting support.
+
 [![Build Status](https://travis-ci.org/simplifycom/simplify-ios-sdk-swift.svg?branch=master)](https://travis-ci.org/simplifycom/simplify-ios-sdk-swift)
 
 The iOS SDK by Simplify allows you to create a card token (one time use token representing card details) in your iOS app to send to a server to enable it to make a payment. By creating a card token, Simplify allows you to avoid sending card details to your server. The SDK can help with formatting and validating card information before the information is tokenized.
